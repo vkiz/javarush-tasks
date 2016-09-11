@@ -22,10 +22,10 @@ public class Solution {
         int b = Integer.parseInt(sB);
         int c = Integer.parseInt(sC);
 
-        if ((a > b+c) || (b > a+c) || (c > a+b)) {
-            System.out.println("Треугольник не существует.");
-        } else {
+        if (a < b+c && b < a+c && c < a+b) {
             System.out.println("Треугольник существует.");
+        } else {
+            System.out.println("Треугольник не существует.");
         }
     }
 }
