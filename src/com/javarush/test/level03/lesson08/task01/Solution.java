@@ -12,9 +12,14 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+        // InputStream inputStream = System.in;
+        // Reader inputStreamReader = new InputStreamReader(inputStream);
+        // BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String age = bufferedReader.readLine();
         String name = bufferedReader.readLine();
-        System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
+        int nAge = Integer.parseInt(age);
+        System.out.println(name + " захватит мир через " + nAge + " лет. Му-ха-ха!");
     }
 }
